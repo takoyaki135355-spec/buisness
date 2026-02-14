@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tako | business</title>
 
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0a0f14;
+    --card: #111821;
+    --text: #d6e2f0;
+    --accent: #00ffc3;
+    --muted: #5c6b7a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--muted);
+    margin-left: 1.5rem;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    padding: 6rem 2rem 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 600px;
+    margin: auto;
+}
+
+.sections {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.card {
+    background: var(--card);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0,255,195,0.15);
+}
+
+.card h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+button {
+    background: var(--accent);
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: #000;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">tako</div>
+    <nav>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="https://www.sudokys.xyz/contactme">contact</a>
+        <a href="/resume" target="_blank">resume</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>tako | business</h1>
+    <p>Consulting, freelance work, and technical services. I do things efficiently, quietly, and cleanly.</p>
+    <button onclick="scrollToSection('#services')">see_services()</button>
+</section>
+
+<section class="sections" id="about">
+    <div class="card">
+        <h2>about_me()</h2>
+        <p>I specialize in CTFs, OSINT, and ethical hacking. I provide consulting for security, web analysis, and small-scale tech projects.</p>
+    </div>
+</section>
+
+<section class="sections" id="services">
+    <div class="card">
+        <h2>services()</h2>
+        <ul>
+            <li>Security audits / pentesting</li>
+            <li>OSINT research and reporting</li>
+            <li>Small web project setup / consulting</li>
+        </ul>
+    </div>
+</section>
+
+
+
+<footer>
+    © 2026 tako | business
+</footer>
+
+<script>
+function scrollToSection(id) {
+    document.querySelector(id).scrollIntoView({behavior: "smooth"});
+}
+</script>
+
+</body>
+</html>
