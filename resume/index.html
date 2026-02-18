@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tako | Resume</title>
 
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0a0f14;
+    --text: #d6e2f0;
+    --accent: #00ffc3;
+    --muted: #5c6b7a;
+    --line: #1c2730;
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+}
+
+header h2 {
+    font-size: 1rem;
+    color: var(--muted);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.3rem;
+}
+
+h4 {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+p, li {
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+li::before {
+    content: "→ ";
+    color: var(--accent);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--line);
+    margin: 1.5rem 0;
+}
+
+.contact a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.skills, .experience, .education, .competitions, .certifications {
+    border-left: 2px solid var(--line);
+    padding-left: 1rem;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+    <h1>Tako</h1>
+    <h2>Cybersecurity | OSINT | Ethical Hacking</h2>
+</header>
+
+<section class="contact">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:youremail@example.com">takoyaki135355@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/takoyaki135355" target="_blank">github.com/takoyaki135355</a></p>
+    <p>Whatsapp: <span style="color: var(--accent);">+60 17-415 1822</span></p>
+    <p>Discord / Handle: <span style="color: var(--accent);">0xdeadbeef____</span></p>
+    <p>PGP: <span style="color: var(--accent);">6530 59AF A1DE F4B7 5FFD  3425 986E 3B33 5666 A15E </span> </p>
+</section>
+
+<hr>
+
+<section class="skills">
+    <h3>Skills</h3>
+    <ul>
+        <li>Ethical Hacking / Pentesting</li>
+        <li>OSINT Investigations</li>
+        <li>Python / Bash / JavaScript / Go</li>
+        <li>Web Development: HTML, CSS, JS</li>
+    </ul>
+</section>
+
+<hr>
+
+<hr>
+
+<section class="education">
+    <h3>Education</h3>
+    <h4>Otis Spears Elementary School</h4>
+    <h4>Hosp Elementary School</h4>
+    <h4>Pearson Middle School Frisco Texas</h4>
+    <h4>Taylor's International School Kuala Lumpur Malaysia</h4>
+    <p class="date"></p>
+    <ul>
+      
+    </ul>
+</section>
+
+<hr>
+
+<section class="competitions">
+    <h3>Competitions</h3>
+    <ul>
+        <li>LA CTF – 2026 – THEM?! –  56th Place</li>
+        <li>Nexhunt CTF – 2025 – THEM?! –  4th Place</li>
+        <li>WannaGameChampionship – 2025 – THEM?! – 10th Place</li>
+	<li>RamadanCTF – 2026 – TAKOYAKI (solo) – Ongoing</li>
+	<li>BearCatCTF – 2026 – THEM?! + H3XSEC (Merger Comp) – Ongoing</li>
+
+    </ul>
+</section>
+
+<hr>
+
+<section class="certifications">
+    <h3>Certifications</h3>
+    <ul>
+        <li>Cisco Introduction to Cybersecurity – 2026</li>
+    </ul>
+</section>
+
+</div>
+</body>
+</html>
